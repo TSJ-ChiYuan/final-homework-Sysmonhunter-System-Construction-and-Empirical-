@@ -35,3 +35,12 @@ Sysmon安裝後分為用戶態系統服務，驅動兩部分，用戶態通過ET
 通過分析查看dll的調用次數，分析文件是不是存在被正常程序調用的情況。
 
 ![1578991102_5e1d7dfecf170](https://user-images.githubusercontent.com/82754889/122736961-2532d780-d2b3-11eb-82f7-71aa79b0dd1b.png)
+
+分析某些dll是只被某些程序調用，或是某些操作必須調用的過程，需要逐個分析，判斷能夠被當成特征工程的一個指標。
+
+![1578991108_5e1d7e0485724](https://user-images.githubusercontent.com/82754889/122737734-f1a47d00-d2b3-11eb-9c68-d8c90106d1b6.png)
+
+通過導入圖數據庫進行關聯分析，藍色表示程序，紅色表示調用過程，黃色表示節點，綠色表示終端編號。
+
+![1578991113_5e1d7e0962a8d](https://user-images.githubusercontent.com/82754889/122737925-18fb4a00-d2b4-11eb-8dff-bb0460e26bbb.png)
+
